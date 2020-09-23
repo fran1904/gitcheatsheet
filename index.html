@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/global_styles.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <script src="https://kit.fontawesome.com/08168b175b.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/global_styles.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/08168b175b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Index</title>
-</head>
-<body>
-<div class="container">
-    <header>
+  </head>
+  <body>
+    <div class="container">
+      <header>
         <h1>CHEAT. BE UNFAITHFUL.</h1>
         <p>be a complete</p>
         <div>
-            <img src="assets/img/git-logo-svg-vector.svg" alt="">
+          <img src="assets/img/git-logo-svg-vector.svg" alt="" />
         </div>
-    </header>
-    <main>
+      </header>
+
+      <main>
         <p>What do you want to do?</p>
-        <article>
-            <h3 onclick="toggle()"><i class="fas fa-arrow-right fa-fw"></i>Fetch the latest version of your app from Github</h3>
-            <div id="toggle-me">
-                <img src="assets/img/gitpull.png" alt="">
-            </div>
-        </article>
 
-        <article>
-            <h3 onclick="toggle()"><i class="fas fa-arrow-right fa-fw"></i>View the latest commits made by you and your team</h3>
-            <div id="toggle-me">
-                <img src="assets/img/gitlog.png" alt="">
-            </div>
-        </article>
+        <section id="item1">
+          <a href="#item1">
+            <h3>
+              <i class="fas fa-arrow-right fa-fw"></i>Fetch the latest version
+              of your app from Github
+            </h3>
+          </a>
+          <p class="content">
+            <img src="assets/img/gitpull.png" alt="" />
+          </p>
+        </section>
 
-        <article>
-            <h3 onclick="toggle()"><i class="fas fa-arrow-right fa-fw"></i>View the latest commits in a shortened version</h3>
-            <div id="toggle-me">
-                <img src="assets/img/gitlogoneline.png" alt="">
-            </div>
-        </article>
+        <section id="item2">
+          <a href="#item2">
+            <h3>
+              <i class="fas fa-arrow-right fa-fw"></i>View the latest commits
+              made by you and your team
+            </h3>
+          </a>
+          <p class="content">
+            <img src="assets/img/gitlog.png" alt="" />
+          </p>
+        </section>
 
-        <article>
-            <h3 onclick="toggle()"><i class="fas fa-arrow-right fa-fw"></i>View a past commit</h3>
-            <div id="toggle-me">
-                <img src="assets/img/gitcheckoutcommit.png" alt="">
-            </div>
-        </article>
+        <section id="item3">
+          <a href="#item3">
+            <h3>
+              <i class="fas fa-arrow-right fa-fw"></i>View the latest commits in
+              a shortened version
+            </h3>
+          </a>
+          <p class="content">
+            <img src="assets/img/gitlogoneline.png" alt="" />
+          </p>
+        </section>
 
-        <article>
-            <h3 onclick="toggle()"><i class="fas fa-arrow-right fa-fw"></i>Create a new branch and switch to it simultaneously</h3>
-            <div id="toggle-me">
-                <img src="assets/img/gitcheckoutbranch.png" alt="">
-            </div>
-        </article>
+        <section id="item4">
+          <a href="#item4">
+            <h3><i class="fas fa-arrow-right fa-fw"></i>View a past commit</h3>
+          </a>
+          <p class="content">
+            <img src="assets/img/gitcheckoutcommit.png" alt="" />
+          </p>
+        </section>
 
-        <article>
-            <h3 onclick="toggle()"><i class="fas fa-arrow-right fa-fw"></i>Find out which branch you are currently on</h3>
-            <div id="toggle-me">
-                <img src="assets/img/gitbranch.png" alt="">
-            </div>
-        </article>
+        <section id="item5">
+          <a href="#item5">
+            <h3>
+              <i class="fas fa-arrow-right fa-fw"></i>Create a new branch and
+              switch to it simultaneously
+            </h3>
+          </a>
+          <p class="content">
+            <img src="assets/img/gitcheckoutbranch.png" alt="" />
+          </p>
+        </section>
+
+        <section id="item6">
+          <a href="#item6">
+            <h3>
+              <i class="fas fa-arrow-right fa-fw"></i>Find out which branch you
+              are currently on
+            </h3>
+          </a>
+          <p class="content">
+            <img src="assets/img/gitbranch.png" alt="" />
+          </p>
+        </section>
 
         <footer><small>&copy; jazzfran1 2020</small></footer>
-
-
-    </main>
-</div>
-<script>
-    function toggle() {
-        var element = document.getElementById("toggle-me");
-        element.classList.toggle("hide-show");
-    }
-</script>
-
-</body>
+      </main>
+    </div>
+  </body>
 </html>

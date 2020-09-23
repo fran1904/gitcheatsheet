@@ -8,6 +8,10 @@ body{
 h1, h2, h3, h4, p{
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
 .container{
     margin:0 30%;
     background: #fff;
@@ -31,9 +35,13 @@ h3{
     padding: 10px;
     background: #fafafa;
     margin-bottom:5px;
+    border-radius: 3px;
+    font-size: 1rem;
 }
 h3:hover{
     cursor: pointer;
+    background: #01D1B2;
+    transition: background 0.2s 0s ease-in;
 }
 header p {
     padding-bottom: 20px;
@@ -46,12 +54,9 @@ main p:first-child{
 main{
     padding: 2% 10%;
 }
-article img{
+section img{
     width: 100%;
     border-radius: 4px;
-}
-article div{
-    display: none;
 }
 i{
     padding-right: 8px;
@@ -60,6 +65,17 @@ footer{
     padding: 5% 0;
     text-align:center;
 }
-.hide-show{
-    display: block;
+
+/* ACCORDIAN  FUNCTIONALITY: SHOW/HIDE TOGGLE */
+
+p.content{
+    display: none;  
+    /* This hides the content initially */
 }
+section:target p{
+    display: block;
+    /* This selects the element with the content 
+    and displays it */
+}
+
+
